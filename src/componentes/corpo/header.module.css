@@ -1,0 +1,129 @@
+
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    z-index: 10;  
+}
+.logo{
+    padding-top: 10px;
+}
+.logo img{ 
+    width: 150px;
+}
+.login{
+    background: linear-gradient(to bottom,#6EBDD2, #9DE6FA);
+ 
+    padding: 8px;
+
+    width: 180px;
+    display: flex;
+    justify-content: center;
+
+    font-size: 25px;
+    border-radius: 15px;
+}
+.login:hover{
+    box-shadow: 5px 5px 5px #0088ad;
+}
+.caixa{
+    width: 35%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.navlist ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    list-style: none;
+}
+.navlink{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+.mobilemenuicon {
+    display: none;
+}
+
+.mobilemenu {
+    display: none;
+}
+.navlink{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+.navlinks{
+    background: linear-gradient(to bottom,#6EBDD2, #9DE6FA);
+ 
+    text-decoration: none;
+    font-size: 25px;
+    color: #113171;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+
+.links{
+    color: #fff;
+
+    width: 40%;
+
+    font-size: 30px;
+    font-weight: 300;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .caixa {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+    .mobilemenuicon {
+        display: block;
+        
+    }
+    .mobilemenuicon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobilemenu ul {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #113171;
+
+        border-radius: 50px;
+    }
+    .mobilemenu .navitem {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobilemenu .loginbutton {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobilemenu .loginbutton button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    
+    }

@@ -1,0 +1,215 @@
+section{
+    width: auto;
+    height: 1500px;
+
+    background-size: cover;
+    background-image: url(../../imgs/banner1.png);
+}
+.sloga{
+    padding-top: 130px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.sloga img{
+    z-index: 1;
+    width: 580px;
+}
+.titulo {
+    width: 400px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo h2{
+    font-size: 68px;
+    color: #fff;
+}
+.cadastro{
+    margin-top: 10px;
+    font-weight: 100px;
+
+    width: 180px;
+    height: 50px;
+
+    background-color: #010f77;
+    border-radius: 20px;
+    font-size: 30px;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro:hover{
+    box-shadow: 10px 10px 10px #00073d;
+}
+
+/* Pontos  */
+.caixona{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.caixa{
+    position: absolute;
+
+    top: 580px;
+    z-index: 0;
+    width: 85%;
+    height: 600px;
+
+    background-color: #fff;
+
+    border-radius: 50px;
+}
+.numeros{
+    width: 80%;
+    margin-top: 120px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    flex-wrap: wrap-reverse;
+}
+
+.texto{
+    z-index: 1;
+
+    width: 500px;
+
+    text-align: right;
+    font-size: 50px;
+    color: #1d33b5;
+}
+.pontos{
+    z-index: 1;
+
+    width: 500px;
+    height: 500PX;
+
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 20px;
+
+    font-size: 2.5vw;
+    color: #fff;
+    text-align: center;
+ }
+   
+ .item0 {
+ 
+    background-color: #97B7DD; 
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 2;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(13, 66, 161, 0.90);
+    border-radius: 100px 100px 0px 100px;
+ }
+ .item1 {
+ 
+    background-color: #FDE76D; 
+    grid-row-start: 1;
+    grid-column-start: 2;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(13, 66, 161, 0.90);
+    border-radius: 100px 100px 100px 0px;
+ }
+.item2 {
+
+    background-color: #565A99; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+ 
+    grid-row-end: 3;
+    grid-column-end: 2;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(180deg, rgba(13, 66, 161, 0.90) 0%, rgba(7, 24, 60, 0.90) 100%);
+    border-radius: 100px 0px 100px 100px;
+ }
+ .item3 {
+ 
+    background-color: #C85BB7; 
+    grid-row-start: 2;
+    grid-column-start: 2;
+ 
+    grid-row-end: 3;
+    grid-column-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient(180deg, rgba(13, 66, 161, 0.90) 0%, rgba(7, 24, 60, 0.90) 100%);
+    border-radius: 0px 100px 100px 100px;
+ }
+@media screen and (max-width: 768px) {
+
+    .titulo h2{
+        margin-top: 15px;
+        font-size: 50px;
+    } 
+    .texto{
+        font-size: 43px;
+        text-align: center;
+    }
+    .caixa{
+        height: 1100px
+    }
+    .numeros{
+        margin-top: 100px;
+    }
+    .pontos{
+        width: 500px;
+        height: 450px;
+
+        font-size: 18px;
+        margin-top: 100px;
+    }
+    section{
+        height: 2100px;
+    }
+
+    .sloga img{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
