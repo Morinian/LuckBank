@@ -1,0 +1,76 @@
+.caixa{
+    height: 550px;
+
+    background-color: #0c2355;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.caixa1{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.caixona{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.itens{
+    width: 200px;
+    height: 200px;
+
+    background-color: #0d3a8d;
+    border-radius: 15px;
+    border: #0d42a0 5px solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    color: #fff;
+    fill: #fff;
+}
+.itens svg{
+    width: 50px;
+}
+.itens p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.caixa2 img{
+    width: 99%;
+}
+.caixa2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .caixa1{
+        width: 100%;
+    }
+    .itens{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .caixa{
+        height: auto;
+    }
+    .caixa2{
+        width: 100%;
+    }
+  }

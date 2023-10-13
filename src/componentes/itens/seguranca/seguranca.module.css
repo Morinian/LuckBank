@@ -1,0 +1,45 @@
+.caixa{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.caixa img{
+  width: 650px;
+}
+.caixa1{
+  width: 60%;
+}
+.caixa1,.caixa2{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caixa2{
+  text-align: center;
+  color: blue;
+  font-size: 50px;
+  width: 40%;
+}
+.caixa2 p{
+  width: 80%;
+}
+span{
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .caixa{
+    margin-top: 10px;
+  }
+  .caixa img{
+    width: 100%;
+  }
+  .caixa1,.caixa2{
+    width: 100%;
+  }
+}

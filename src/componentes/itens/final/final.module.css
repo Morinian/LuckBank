@@ -1,0 +1,51 @@
+.fundo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cart2 h2{
+    width: 90%;
+}
+.cart2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    margin-top: 50px;
+    margin-top: 20%;
+}
+.cart2 img{
+    width: 200px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .fundo{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+
+        text-align: center;
+    }
+    .cart1,.cart2{
+        width: 100%;
+    }
+    .cart2{
+        margin-top: 50px;
+    }
+
+    .fundo img{
+        width: 100%;
+    }
+    .cart2 img{
+        width: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+}

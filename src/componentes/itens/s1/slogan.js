@@ -8,7 +8,7 @@ function Slogan() {
 
               <div className={Styles.titulo}>
 
-                <h2>O banco da sua sorte</h2>
+                <h2>O Banco da sua sorte</h2>
 
                 <div className={Styles.cadastro}>
                     Cadastre
@@ -45,7 +45,7 @@ function Slogan() {
                 </div>
 
                 <div className={Styles.texto}>
-                  <p>Nosso compromisso se traduz em números significativos que transformam vidas</p>
+                  <p>Nosso compromisso se traduz em <span>números</span>  significativos que <span>transformam</span> vidas</p>
                 </div>
                               
               </div>
