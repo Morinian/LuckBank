@@ -1,24 +1,26 @@
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import Header from './componentes/corpo/header';
-import Slogan from './componentes/itens/s1/slogan';
-import Seguranca from './componentes/itens/seguranca/seguranca';
-import Servico from './componentes/itens/servico/servico';
-import Card from './componentes/itens/produtos/card';
-import Final from './componentes/itens/final/final';
-import Footer from './componentes/corpo/footer';
+import Meio from './componentes/tudo';
+import Login from './componentes/itens/login/login';
+import Cadastre from './componentes/itens/cadastro/cadastre';
 
 function App() {
   return (
-      <body>
-          <Header/>
-          <Slogan/>
-          <Seguranca/>
-          <Servico/>
-          <Card/>
-          <Final/>
-          <Footer/>
-      </body>
+    <body>
+      <Router>
+
+        <Routes>
+
+          <Route path='/' element={<Meio/>} />
+          <Route path='/Login' element={<Login/>} />
+          <Route path='/Cadastre' element={<Cadastre/>} />
+
+
+        </Routes>   
+
+      </Router>
+    </body>
   );
 }
 

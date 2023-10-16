@@ -4,6 +4,8 @@ import Styles from './header.module.css';
 import logo from '../imgs/logo.png';
 import menu from '../imgs/menu_.png';
 
+import {Link} from 'react-router-dom'
+
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -21,13 +23,13 @@ function Header() {
             </div>
 
             <div className={Styles.caixa}>
-                <a href="#trabalho" className={Styles.navlink}>Serviços</a>
-                <a href="#inicio" className={Styles.navlink}>Vantagens</a>
-                <a href="#sobre" className={Styles.navlink}>Aplicativo</a>
+                <a href="#Servico" className={Styles.navlink}>Serviços</a>
+                <a href="#Seguranca" className={Styles.navlink}>Vantagens</a>
+                <a href="#Final" className={Styles.navlink}>Aplicativo</a>
             </div>
 
             <div className={Styles.login}>
-                <p>Área do Cliente</p>
+                <Link to='./Login' className={Styles.linke}><p>Área do Cliente</p></Link>
             </div>
 
             <div className={Styles.mobilemenuicon}>
@@ -46,7 +48,7 @@ function Header() {
           <li className={Styles.navitem}><a href="#sobre" className={Styles.navlink}>Serviços</a></li>
           <li className={Styles.navitem}><a href="#trabalho" className={Styles.navlink}>Vantagens</a></li>
           <li className={Styles.navitem}><a href="#dirfooter" className={Styles.navlink}>Aplicativo</a></li>
-          <li className={Styles.navitem}><a href="#dirfooter" className={Styles.navlinks}>Área do Cliente</a></li>
+          <li className={Styles.navitem}><Link to='./Login' className={Styles.linke}><a href="#dirfooter" className={Styles.navlinks}>Área do Cliente</a></Link></li>
         </ul>
       </div>
     </header>

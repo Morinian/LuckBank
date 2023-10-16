@@ -1,6 +1,8 @@
 import Styles from './slogan.module.css'
 import cartao from '../../imgs/cartao.png'
 
+import {Link} from 'react-router-dom'
+
 function Slogan() {
   return (
       <section>
@@ -10,9 +12,11 @@ function Slogan() {
 
                 <h2>O Banco da sua sorte</h2>
 
+                <Link to='./Cadastre' className={Styles.linke}>
                 <div className={Styles.cadastro}>
                     Cadastre
                 </div>
+                </Link>
 
               </div>
                 
