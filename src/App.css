@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Poppins:wght@300&family=Roboto+Condensed&display=swap');
 *{
     margin: 0;
     border: 0;
     padding: 0;
 }
 body{
-    font-family:'Open Sans';
+    font-family:'Roboto Condensed';
     overflow-x: none;
 }

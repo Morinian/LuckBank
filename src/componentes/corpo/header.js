@@ -4,7 +4,8 @@ import Styles from './header.module.css';
 import logo from '../imgs/logo.png';
 import menu from '../imgs/menu_.png';
 
-import {Link} from 'react-router-dom'
+import {Link as ScrollLink  } from 'react-scroll'
+import {Link as RouterLink  } from 'react-router-dom'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,13 +24,35 @@ function Header() {
             </div>
 
             <div className={Styles.caixa}>
-                <a href="#Servico" className={Styles.navlink}>Serviços</a>
-                <a href="#Seguranca" className={Styles.navlink}>Vantagens</a>
-                <a href="#Final" className={Styles.navlink}>Aplicativo</a>
+
+                <ScrollLink className={Styles.navlink}
+                  activeClass="active" 
+                  to="servicos" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={50} 
+                  duration={500}
+                  >Serviços</ScrollLink>
+
+                <ScrollLink className={Styles.navlink}
+                  activeClass="active" 
+                  to="card" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={50} 
+                  duration={500} >Vantagens</ScrollLink>
+
+                <ScrollLink className={Styles.navlink}
+                  activeClass="active" 
+                  to="app" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={50} 
+                  duration={500} >Aplicativo</ScrollLink>
             </div>
 
             <div className={Styles.login}>
-                <Link to='./Login' className={Styles.linke}><p>Área do Cliente</p></Link>
+                <RouterLink to='./Login' className={Styles.linke}><p>Área do Cliente</p></RouterLink>
             </div>
 
             <div className={Styles.mobilemenuicon}>
@@ -45,10 +68,28 @@ function Header() {
 
       <div className={`${Styles.mobilemenu} ${isMenuOpen ? Styles.open : ''}`}>
         <ul>
-          <li className={Styles.navitem}><a href="#sobre" className={Styles.navlink}>Serviços</a></li>
-          <li className={Styles.navitem}><a href="#trabalho" className={Styles.navlink}>Vantagens</a></li>
-          <li className={Styles.navitem}><a href="#dirfooter" className={Styles.navlink}>Aplicativo</a></li>
-          <li className={Styles.navitem}><Link to='./Login' className={Styles.linke}><a href="#dirfooter" className={Styles.navlinks}>Área do Cliente</a></Link></li>
+          <li className={Styles.navitem}><ScrollLink
+                  activeClass="active" 
+                  to="servicos" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={50} 
+                  duration={500} className={Styles.navlink}>Serviços</ScrollLink></li>
+          <li className={Styles.navitem}><ScrollLink
+                  activeClass="active" 
+                  to="card" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={50} 
+                  duration={500}  href="#trabalho" className={Styles.navlink}>Vantagens</ScrollLink></li>
+          <li className={Styles.navitem}><ScrollLink
+                  activeClass="active" 
+                  to="app" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={50} 
+                  duration={500}  href="#dirfooter" className={Styles.navlink}>Aplicativo</ScrollLink></li>
+          <li className={Styles.navitem}><RouterLink to='./Login' className={Styles.linke}><a href="#dirfooter" className={Styles.navlinks}>Área do Cliente</a></RouterLink></li>
         </ul>
       </div>
     </header>

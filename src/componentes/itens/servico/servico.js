@@ -3,7 +3,7 @@ import mulher from '../../imgs/teste.png'
 
 function Servico() {
   return (
-      <div className={Styles.caixa}>
+      <div className={Styles.caixa} id='servicos'>
            <div className={Styles.caixa1}>
 
                 <div className={Styles.caixona}>

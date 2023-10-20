@@ -4,7 +4,7 @@ import disponivel from '../../imgs/disponivel.png'
 
 function Final() {
   return (
-      <div className={Styles.fundo}>
+      <div className={Styles.fundo} id='app'>
   
 
             <img src={cart1}></img>
